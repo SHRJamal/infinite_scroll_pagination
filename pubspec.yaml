@@ -4,14 +4,13 @@ version: 2.3.0+1
 homepage: https://github.com/EdsonBueno/infinite_scroll_pagination
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.10.0 <3.0.0"
   flutter: ">=1.22.0 <2.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   sliver_tools: ^0.1.10+1
-  equatable: <2.0.0
 
 dev_dependencies:
   flutter_test:

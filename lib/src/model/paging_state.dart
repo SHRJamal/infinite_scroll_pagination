@@ -1,4 +1,3 @@
-import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 
@@ -6,7 +5,7 @@ import 'package:infinite_scroll_pagination/src/model/paging_status.dart';
 
 /// The current item's list, error, and next page key state for a paginated
 /// widget.
-class PagingState<PageKeyType, ItemType> extends Equatable {
+class PagingState<PageKeyType, ItemType> {
   const PagingState({
     this.nextPageKey,
     this.itemList,
@@ -100,7 +99,4 @@ class PagingState<PageKeyType, ItemType> extends Equatable {
         error: error ?? this.error,
         nextPageKey: nextPageKey ?? this.nextPageKey,
       );
-
-  @override
-  List<Object> get props => [itemList, error, nextPageKey];
 }
